@@ -237,3 +237,50 @@ personalMovieDB.movies[c] = d;
 
 
 console.log( personalMovieDB );
+
+//========================================================================================================================================================
+
+if ( 4 == 4 ) {
+	console.log( 'ok' );
+} else {
+	console.log( 'error' );
+}
+
+const number = 50;
+
+if ( number > 50 ) {
+	console.log( 'Не вірно' );
+} else if ( num > 100 ) {
+	console.log('Бвгато');
+} else {
+	console.log( 'Вірно' );
+}
+
+(num === 50) ? console.log('ok') : console.log('Не вірно')
+
+const num = '50';
+
+switch (num) {
+	case '49':
+		console.log( 'Не вірно' );
+		break;
+	case '100':
+		console.log( 'Не вірно' );
+		break;
+	case '50':
+		console.log( 'Вірно' );
+		break;
+	default:
+		console.log( 'Пощастить іншим разом' );
+		break;
+}
+
+const arr = 40;
+
+if ( arr > 50 ) {
+	console.log( 'false' );
+} else if ( arr < 50 ) {
+	console.log( 'true' );
+} else {
+	console.log( 'Іншим разом' );
+}
