@@ -217,7 +217,264 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-const numberOfFilms = prompt( 'Сколько фильмов вы уже посмотрели?', '' );
+// const numberOfFilms = +prompt( 'Сколько фильмов вы уже посмотрели?', '' );
+
+// const personalMovieDB = {
+// 	count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	enres: [],
+// 	privat: false
+// };
+
+// const a = prompt( 'Один из последних просмотренных фильмов?' );
+// const b = prompt( 'На сколько оцените его?' );
+// const c = prompt( 'Один из последних просмотренных фильмов?' );
+// const d = prompt( 'На сколько оцените его?' );
+
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
+
+
+// console.log( personalMovieDB );
+
+//========================================================================================================================================================
+
+// if ( 4 == 4 ) {
+// 	console.log( 'ok' );
+// } else {
+// 	console.log( 'error' );
+// }
+
+// const number = 50;
+
+// if ( number > 50 ) {
+// 	console.log( 'Не вірно' );
+// } else if ( num > 100 ) {
+// 	console.log('Бвгато');
+// } else {
+// 	console.log( 'Вірно' );
+// }
+
+// (num === 50) ? console.log('ok') : console.log('Не вірно')
+
+// const num = '50';
+
+// switch (num) {
+// 	case '49':
+// 		console.log( 'Не вірно' );
+// 		break;
+// 	case '100':
+// 		console.log( 'Не вірно' );
+// 		break;
+// 	case '50':
+// 		console.log( 'Вірно' );
+// 		break;
+// 	default:
+// 		console.log( 'Пощастить іншим разом' );
+// 		break;
+// }
+
+// const arr = 40;
+
+// if ( arr > 50 ) {
+// 	console.log( 'false' );
+// } else if ( arr < 50 ) {
+// 	console.log( 'true' );
+// } else {
+// 	console.log( 'Іншим разом' );
+// }
+
+//========================================================================================================================================================
+// const hamb = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+// if ( hamb === 3 && cola === 2 || fries === 3 && nuggets ) {
+// 	console.log( 'Ми задоволені' );
+// } else {
+// 	console.log( 'Ми йдемо' );
+// }
+
+// console.log( hamb === 3 && col === 2 || fries === 3 && nugget );
+
+// console.log( !1 && 2 || !3 );
+
+// console.log( 25 || null && !3 );
+
+// console.log( NaN || null || !3 || undefined || 5 );
+
+// console.log( NaN || null && !3 && undefined || 5 );
+
+// console.log( 5 === 5 && 3 > 1 || 5 );
+
+
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
+
+
+// if (hamburger === 3 && cola || fries === 3 && nuggets) {
+//     console.log('Done!')
+// }
+
+// let hamburger1;
+// const fries1 = NaN;
+// const cola1 = 0;
+// const nuggets1 = 2;
+
+
+// if (hamburger1 || cola1 || fries1 === 3 || nuggets1) {
+//     console.log('Done!')
+// }
+
+// let hamburger2;
+// const fries2 = NaN;
+// const cola2 = 0;
+// const nuggets2 = 2;
+
+
+// if (hamburger2 && cola2 || fries2 === 3 && nuggets2) {
+//     console.log('Done!')
+// }
+ //========================================================================================================================================================
+ // Цикли
+
+// let num1 = 50;
+
+// while ( num1 <= 55 ) {
+// 	console.log( num1 );
+// 	num1++;
+// }
+
+// do {
+// 	console.log( num1 );
+// 	num1++
+// }
+// while ( num1 < 55 );
+
+// for ( let i = 1; i < 8; i++ ){
+// 	console.log( i );
+// }
+// for ( let i = 1; i < 8; i++ ){
+// 	console.log( num1 );
+// 	num1++;
+// }
+
+// for ( let i = 1; i < 10; i++) {
+// 	if ( i === 6 ) {
+// 		break;
+// 	}
+// 	console.log( i );
+// }
+
+// for ( let i = 1; i < 10; i++) {
+// 	if ( i === 6 ) {
+// 		continue;
+// 	}
+// 	console.log( i );
+// }
+//========================================================================================================================================================
+// ВКЛАДЕНІСТЬ ЦИКЛІВ
+
+// for ( let i = 0; i < 3; i++ ){
+// 	console.log( i );
+// 	for ( let j = 0; j < 3; j++ ){
+// 		console.log( j );
+// 	}
+// }
+
+// // *
+// // **
+// // ***
+// // ****
+// // *****
+// // ******
+
+// let result = '';
+// const lenght = 7;
+
+// for ( let i = 1; i < lenght; i++) {
+	
+// 	for ( let j = 0; j < i; j++ ){
+// 		result += '*';
+// 	}
+		
+	
+// 	result += '\n';
+// }
+// console.log( result );
+
+//========================================================================================================================================================
+
+// first: for ( let i = 0; i < 3; i++ ){
+// 	console.log(`First level: ${i}`);
+// 	for ( let j = 0; j < 3; j++ ){
+// 		console.log(`Second level: ${j}`);
+// 		for ( let k = 0; k < 5; k++ ){
+// 			if ( k === 2 ) break first;
+// 			console.log(`Third level: ${k}`);
+// 		}
+// 	}
+// }
+
+//========================================================================================================================================================
+
+/* Задание на урок:
+
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+'Сколько фильмов вы уже посмотрели?'
+
+2) Создать объект personalMovieDB и в него поместить такие свойства:
+    - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
+
+3) Задайте пользователю по два раза вопросы:
+    - 'Один из последних просмотренных фильмов?'
+    - 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+    movies: {
+        'logan': '8.1'
+    }
+
+Проверить, чтобы все работало без ошибок в консоли */
+
+/* Задание #2 на урок:
+
+1) Автоматизировать вопросы пользователю про фильмы при помощи цикла
+
+2) Сделать так, чтобы пользователь не мог оставить ответ в виде пустой строки,
+отменить ответ или ввести название фильма длинее, чем 50 символов. Если это происходит - 
+возвращаем пользователя к вопросам опять
+
+3) При помощи условий проверить  personalMovieDB.count, и если он меньше 10 - вывести сообщение
+"Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если больше - 
+"Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
+
+4) Потренироваться и переписать цикл еще двумя способами*/
+
+
+// Код возьмите из предыдущего домашнего задания
+
+
+// const c = prompt( 'Один из последних просмотренных фильмов?' );
+// const d = prompt( 'На сколько оцените его?' );
+
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
+
+let num1 = 50;
+
+while ( num1 <= 55 ) {
+	console.log( num1 );
+	num1++;
+}
+const numberOfFilms = +prompt( 'Сколько фильмов вы уже посмотрели?', '' );
 
 const personalMovieDB = {
 	count: numberOfFilms,
@@ -227,60 +484,28 @@ const personalMovieDB = {
 	privat: false
 };
 
-const a = prompt( 'Один из последних просмотренных фильмов?' );
-const b = prompt( 'На сколько оцените его?' );
-const c = prompt( 'Один из последних просмотренных фильмов?' );
-const d = prompt( 'На сколько оцените его?' );
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+for (let i = 0; i < 2; i++ ) {
+	const a = prompt( 'Один из последних просмотренных фильмов?' );
+    const b = prompt( 'На сколько оцените его?' );
+	if ( a != null && b != null && a != '' && b != '' && a.length < 50 ) {
+		personalMovieDB.movies[a] = b;
+		console.log( 'Done' );
+	} else {
+		console.log( 'Error' );
+		i--;
+	}
+}
 
+
+if ( personalMovieDB.count < 10 ) {
+	console.log("Просмотрено довольно мало фильмов");
+} else if ( personalMovieDB.count >= 10 && personalMovieDB.count < 30 ) {
+	console.log( "Вы классический зритель" );
+} else if ( personalMovieDB.count >= 30 ) {
+	console.log( "Вы киноман" );
+} else {
+	console.log("Произошла ошибка");
+}
 
 console.log( personalMovieDB );
-
-//========================================================================================================================================================
-
-if ( 4 == 4 ) {
-	console.log( 'ok' );
-} else {
-	console.log( 'error' );
-}
-
-const number = 50;
-
-if ( number > 50 ) {
-	console.log( 'Не вірно' );
-} else if ( num > 100 ) {
-	console.log('Бвгато');
-} else {
-	console.log( 'Вірно' );
-}
-
-(num === 50) ? console.log('ok') : console.log('Не вірно')
-
-const num = '50';
-
-switch (num) {
-	case '49':
-		console.log( 'Не вірно' );
-		break;
-	case '100':
-		console.log( 'Не вірно' );
-		break;
-	case '50':
-		console.log( 'Вірно' );
-		break;
-	default:
-		console.log( 'Пощастить іншим разом' );
-		break;
-}
-
-const arr = 40;
-
-if ( arr > 50 ) {
-	console.log( 'false' );
-} else if ( arr < 50 ) {
-	console.log( 'true' );
-} else {
-	console.log( 'Іншим разом' );
-}
