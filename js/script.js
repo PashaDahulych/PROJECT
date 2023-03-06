@@ -468,44 +468,191 @@
 // personalMovieDB.movies[a] = b;
 // personalMovieDB.movies[c] = d;
 
-let num1 = 50;
+// let num1 = 50;
 
-while ( num1 <= 55 ) {
-	console.log( num1 );
-	num1++;
-}
-const numberOfFilms = +prompt( 'Сколько фильмов вы уже посмотрели?', '' );
+// while ( num1 <= 55 ) {
+// 	console.log( num1 );
+// 	num1++;
+// }
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	enres: [],
-	privat: false
-};
-
-
-for (let i = 0; i < 2; i++ ) {
-	const a = prompt( 'Один из последних просмотренных фильмов?' );
-    const b = prompt( 'На сколько оцените его?' );
-	if ( a != null && b != null && a != '' && b != '' && a.length < 50 ) {
-		personalMovieDB.movies[a] = b;
-		console.log( 'Done' );
-	} else {
-		console.log( 'Error' );
-		i--;
-	}
-}
+// const numberOfFilms = +prompt( 'Сколько фильмов вы уже посмотрели?', '' );
+    
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     enres: [],
+//     privat: false
+// };
 
 
-if ( personalMovieDB.count < 10 ) {
-	console.log("Просмотрено довольно мало фильмов");
-} else if ( personalMovieDB.count >= 10 && personalMovieDB.count < 30 ) {
-	console.log( "Вы классический зритель" );
-} else if ( personalMovieDB.count >= 30 ) {
-	console.log( "Вы киноман" );
-} else {
-	console.log("Произошла ошибка");
-}
+// WHILE
+// let a;
+// let b;
+// for ( let i = 0; i < 2; i++ ) {
+//     a = '';
+//     b = '';
 
-console.log( personalMovieDB );
+//     while ( a === '' || a === null || a.length > 50 || a.trim() === '' || b === '' || b === null || b.trim() === '' ) {
+//         a = prompt( 'Один из последних просмотренных фильмов?', '' );
+//         b = prompt('На сколько оцените его?', '');
+//     }
+
+//     personalMovieDB.movies[a] = b;
+// }
+
+
+// DO WHILE
+// let a;
+// let b;
+
+// for (let i = 0; i < 2; i++){
+
+// 	do{
+//         a = prompt( 'Один из последних просмотренных фильмов?', '' );
+//         b = prompt('На сколько оцените его?', '');
+// 	} while (a === '' || a === null || a.length > 50 || a.trim() === '' || b === '' || b === null || b.trim() === '' );
+
+//     personalMovieDB.movies[a] = b;
+//     console.log( 'Done' );
+
+// } 
+
+
+
+// for (let i = 0; i < 2; i++) {
+//     const a = prompt('Один из последних просмотренных фильмов?', ''),
+//         b = prompt('На сколько оцените его?', '');
+
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//     } else {
+//         console.log('error');
+//         i--;
+//     }
+// }
+
+//     if ( personalMovieDB.count < 10 ) {
+//     	console.log("Просмотрено довольно мало фильмов");
+//     } else if ( personalMovieDB.count >= 10 && personalMovieDB.count < 30 ) {
+//     	console.log( "Вы классический зритель" );
+//     } else if ( personalMovieDB.count >= 30 ) {
+//     	console.log( "Вы киноман" );
+//     } else {
+//     	console.log("Произошла ошибка");
+//     }
+    
+//     console.log( personalMovieDB );
+
+
+//========================================================================================================================================================
+// Функції
+
+// let num = 20;
+
+// function showFirstMessage(text) {
+//     console.log( text );
+//     console.log( num );
+// }
+
+// showFirstMessage( 'Hello World' );
+// console.log( num );
+
+
+
+// function calc ( a, b ) {
+//     return ( a + b );
+// }
+// console.log( calc( 3, 5 ) );
+
+// function ret () {
+//     let num = 50;
+
+//     //
+
+//     return num;
+// }
+// const anotherNum = ret();
+// console.log( anotherNum );
+
+// const logger = function () { 
+//     console.log( 'Hello' );
+// };
+
+// logger(); 
+
+// =============================
+
+// const calc = ( a, b ) => {
+//     console.log( '1' );
+//     return a + b;
+// };
+
+
+// const usdCurs = 28;
+// const eurCurs = 32;
+
+// function convert ( monye, curs ) {
+//     console.log( curs * monye );
+// }
+
+// const usdCurs1 = 30;
+// const discont = 0.9;
+
+// function convert1 ( monye, curs ) {
+//     return curs * monye;
+// }
+
+// function promotion ( result ) {
+//     console.log( result * discont );
+// }
+// const res = convert1( 500, usdCurs1 );
+// promotion( res ); // інший варік, просто створюється проміжкова змінна, в яку задаєьться значення першої функції
+
+// promotion( convert1( 500, usdCurs1 ) );- один із варіків функція в функції
+
+// convert( 500, usdCurs );
+// convert( 500, eurCurs );
+
+// function test () {
+//     for ( let i = 0; i < 5; i++ ){
+//         console.log( i );
+//         if ( i === 3 ) return;
+//     }
+//     console.log( 'Done' );
+// }
+
+// test();
+
+//========================================================================================================================================================
+// Методи і властивості рядків
+
+// const str = "test";
+
+// console.log( str.toUpperCase() );
+// console.log( str.toLowerCase() );
+// console.log( str );
+
+// const fruit = "Some fruit"
+
+// console.log( fruit.indexOf( "q" ) );
+
+// const logg = "Hello world";
+
+// console.log( logg.slice( -5, -1 ) );
+
+// console.log( logg.substring( 5, 11 ) );
+
+// console.log( logg.substr(6, 4) );
+
+// const num = 12.2;
+// console.log( Math.round( num ) );
+
+// const test = "12.2px"
+
+// console.log( parseInt( test ) );
+// console.log( parseFloat( test ) ); 
+
+
+
